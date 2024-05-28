@@ -1,0 +1,45 @@
+<div class="app d-flex justify-content-center align-items-center flex-column">
+    <!-- header -->
+    <header class="header">
+        <nav class="navbar bg-transparent">
+            <div class="container-fluid">
+                <a class="navbar-brand text-uppercase">Pomodoro timer</a>
+                <div class="dropdown">
+                    <button class="btn btn-secondary dropdown-toggle border-0" type="button" data-bs-toggle="dropdown"
+                        aria-expanded="false">
+                        <i class="fa-solid fa-gear"></i>
+                        Setting
+                    </button>
+                    <ul class="dropdown-menu">
+                        <li><span class="dropdown-item timeAdjuster">Adjust time</span></li>
+                        <li><span class="dropdown-item theme">Theme</span></li>
+                        <li><span class="dropdown-item musicChanger">Change music</span></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+
+    <!-- content -->
+    <div class="container content mt-4 d-flex flex-row justify-content-center align-items-center">
+        <div class="timer d-flex flex-row justify-content-center align-items-center jersey-15-regular">
+            <p class="minute"></p>
+            <p>:</p>
+            <p class="second"></p>
+        </div>
+        <div class="break d-flex flex-row justify-content-center align-items-center jersey-15-regular">
+            <p class="minBreak"></p>
+            <p>:</p>
+            <p class="secBreak"></p>
+        </div>
+    </div>
+    <div class="count mt-4">
+        <p id="countPomo"></p>
+    </div>
+
+    <!-- footer -->
+    <footer class="footer mt-5">
+        <button class="btn start" type="button">Start</button>
+    </footer>
+</div>
+<script src="/js/index.js"></script>

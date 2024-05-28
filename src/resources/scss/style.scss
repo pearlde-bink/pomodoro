@@ -1,0 +1,101 @@
+@import "variables";
+
+.app {
+  background-color: #{$--bgColor};
+  height: 100vh;
+
+  /* header */
+  .header {
+    nav {
+      .container-fluid {
+        a {
+          color: #{$--text};
+        }
+        .dropdown {
+          ul {
+            background-color: #{$--btn};
+            li {
+              .dropdown-item {
+                color: white;
+                cursor: pointer;
+                &:hover {
+                  background-color: #{$--btn};
+                  color: rgb(251, 221, 210);
+                  cursor: pointer;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+
+  /* content */
+  .content {
+    width: 350px;
+    height: 350px;
+    background-color: #{$--timeContainer};
+    border-radius: 50%;
+
+    .timer {
+      p {
+        color: white;
+        font-size: 120px;
+        &:nth-child(2) {
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+      }
+    }
+    .break {
+      p {
+        color: white;
+        font-size: 120px;
+        &:nth-child(2) {
+          margin-left: 30px;
+          margin-right: 30px;
+        }
+      }
+    }
+  }
+
+  .count {
+    p {
+      color: #{$--text};
+      font-size: 20px;
+    }
+  }
+
+  /* footer */
+  .footer {
+    .btn.start {
+      padding: 8px 25px;
+      font-size: 20px;
+    }
+  }
+
+  .btn {
+    color: #{$--text};
+    font-weight: 600;
+    border: 1px solid #{$--btn};
+    background-color: #{$--btn};
+    box-shadow:
+      19px 17px 11px -3px rgba(0, 0, 0, 0.1),
+      0px 10px 15px -3px rgba(0, 0, 0, 0.1);
+    transition: 1s;
+    &:hover {
+      background-color: #{$--timeContainer};
+      color: #{$--text};
+    }
+    &:active {
+      transform: translateY(10px);
+    }
+  }
+
+  .jersey-15-regular {
+    font-family: "Jersey 15", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+  }
+}
