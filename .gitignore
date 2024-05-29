@@ -1,5 +1,6 @@
 .vscode
 
 src/public/css/
+src/public/audio/
 
 node_modules/

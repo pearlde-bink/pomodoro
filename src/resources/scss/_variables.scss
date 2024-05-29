@@ -1,6 +1,112 @@
+$theme-sunset-bgColor: #640d6b;
+$theme-sunset-timeContainer: #b51b75;
+$theme-sunset-btn: #e65c19;
+$theme-sunset-text: #f8d082;
+$theme-sunset-break: #9de776;
+
+$theme-ocean-bgColor: #3a0ca3;
+$theme-ocean-timeContainer: #4cc9f0;
+$theme-ocean-btn: #f72585;
+$theme-ocean-text: #f2f2f2;
+$theme-ocean-break: #7209b7;
+
+$theme-candy-bgColor: #bde0fe;
+$theme-candy-timeContainer: #ffafcc;
+$theme-candy-btn: #ffc8dd;
+$theme-candy-text: #b78ad2;
+$theme-candy-break: #a2d2ff;
+
+$theme-herb-bgColor: #adc178;
+$theme-herb-timeContainer: #dde5b6;
+$theme-herb-btn: #a98467;
+$theme-herb-text: #f0ead2;
+$theme-herb-break: #6c584c;
+
+$theme-bee-bgColor: #242423;
+$theme-bee-timeContainer: #333533;
+$theme-bee-btn: #ffe628;
+$theme-bee-text: #6c7362;
+$theme-bee-break: #cfdbd5;
+
+$theme-netflix-bgColor: #831010;
+$theme-netflix-timeContainer: #000000;
+$theme-netflix-btn: #ffffff;
+$theme-netflix-text: #db0000;
+$theme-netflix-break: #564d4d;
+
+$theme-vozer-bgColor: #003049;
+$theme-vozer-timeContainer: #c1121f;
+$theme-vozer-btn: #6a0101;
+$theme-vozer-text: #fdf0d5;
+$theme-vozer-break: #669bbc;
+
+:root {
+  --bgColor: #{$theme-sunset-bgColor};
+  --timeContainer: #{$theme-sunset-timeContainer};
+  --btn: #{$theme-sunset-btn};
+  --text: #{$theme-sunset-text};
+  --break: #{$theme-sunset-break};
+}
+
 /* sunset */
-$--bgColor: #640d6b;
-$--timeContainer: #b51b75;
-$--btn: #e65c19;
-$--text: #f8d082;
-$--break: #9de776;
+.theme-sunset {
+  --bgColor: #{$theme-sunset-bgColor};
+  --timeContainer: #{$theme-sunset-timeContainer};
+  --btn: #{$theme-sunset-btn};
+  --text: #{$theme-sunset-text};
+  --break: #{$theme-sunset-break};
+}
+
+// ocean
+.theme-ocean {
+  --bgColor: #{$theme-ocean-bgColor};
+  --timeContainer: #{$theme-ocean-timeContainer};
+  --btn: #{$theme-ocean-btn};
+  --text: #{$theme-ocean-text};
+  --break: #{$theme-ocean-break};
+}
+
+// candy
+.theme-candy {
+  --bgColor: #{$theme-candy-bgColor};
+  --timeContainer: #{$theme-candy-timeContainer};
+  --btn: #{$theme-candy-btn};
+  --text: #{$theme-candy-text};
+  --break: #{$theme-candy-break};
+}
+
+// herb
+.theme-herb {
+  --bgColor: #{$theme-herb-bgColor};
+  --timeContainer: #{$theme-herb-timeContainer};
+  --btn: #{$theme-herb-btn};
+  --text: #{$theme-herb-text};
+  --break: #{$theme-herb-break};
+}
+
+// bee
+.theme-bee {
+  --bgColor: #{$theme-bee-bgColor};
+  --timeContainer: #{$theme-bee-timeContainer};
+  --btn: #{$theme-bee-btn};
+  --text: #{$theme-bee-text};
+  --break: #{$theme-bee-break};
+}
+
+// netflix
+.theme-netflix {
+  --bgColor: #{$theme-netflix-bgColor};
+  --timeContainer: #{$theme-netflix-timeContainer};
+  --btn: #{$theme-netflix-btn};
+  --text: #{$theme-netflix-text};
+  --break: #{$theme-netflix-break};
+}
+
+// vozer
+.theme-vozer {
+  --bgColor: #{$theme-vozer-bgColor};
+  --timeContainer: #{$theme-vozer-timeContainer};
+  --btn: #{$theme-vozer-btn};
+  --text: #{$theme-vozer-text};
+  --break: #{$theme-vozer-break};
+}

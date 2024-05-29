@@ -21,6 +21,64 @@
     </header>
 
     <!-- content -->
+    <div class="theme_picker">
+        <h5 class="text-uppercase text-white">Pick the theme you adore</h5>
+        <ul>
+            <li><button class="btn btn-theme" data-theme="sunset">Sunset</button></li>
+            <li><button class="btn btn-theme" data-theme="ocean">Ocean</button></li>
+            <li><button class="btn btn-theme" data-theme="candy">Candy</button></li>
+            <li><button class="btn btn-theme" data-theme="herb">Herb</button></li>
+            <li><button class="btn btn-theme" data-theme="bee">Bee</button></li>
+            <li><button class="btn btn-theme" data-theme="netflix">Netflix</button></li>
+            <li><button class="btn btn-theme" data-theme="vozer">Vozer</button></li>
+        </ul>
+    </div>
+
+
+    {{!-- music --}}
+    <div class="music_picker">
+        <h5 class="text-uppercase text-white">Ringing sound</h5>
+        <ul>
+            <li>
+                <button class="btn btn-ring" data-ring="bell"><audio src="/audio/bell.mp3"
+                        id="musicbell"></audio>Bell</button>
+            </li>
+            <li>
+                <button class="btn btn-ring" data-ring="kb1"><audio src="/audio/kha-banh-ao-that-day.mp3"
+                        id="musickb1"></audio>Kha
+                    Banh 1</button>
+            </li>
+            <li>
+                <button class="btn btn-ring" data-ring="kb2"><audio src="/audio/thoi-thoi-may-dung-co-boc-phet.mp3"
+                        id="musickb2"></audio>Kha Banh
+                    2</button>
+            </li>
+            <li>
+                <button class="btn btn-ring" data-ring="among"><audio src="/audio/among.mp3"
+                        id="musicamong"></audio>Among us</button>
+            </li>
+            <li>
+                <button class="btn btn-ring" data-ring="ccl"><audio src="/audio/chi-co-lam.mp3"
+                        id="musicccl"></audio>Huan
+                    Rose</button>
+            </li>
+            <li>
+                <button class="btn btn-ring" data-ring="happy"><audio src="/audio/happy-aya-sir.mp3"
+                        id="musichappy"></audio>Happy</button>
+            </li>
+            <li>
+                <button class="btn btn-ring" data-ring="cuh"><audio src="/audio/im-bout-to-cuh.mp3"
+                        id="musiccuh"></audio>Cuhh</button>
+            </li>
+            <li>
+                <button class="btn btn-ring" data-ring="jojo"><audio src="/audio/jojo.mp3"
+                        id="musicjojo"></audio>JoJo</button>
+            </li>
+        </ul>
+    </div>
+
+
+    {{!-- timer --}}
     <div class="container content mt-4 d-flex flex-row justify-content-center align-items-center">
         <div class="timer d-flex flex-row justify-content-center align-items-center jersey-15-regular">
             <p class="minute"></p>
