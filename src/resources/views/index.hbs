@@ -1,4 +1,32 @@
 <div class="app d-flex justify-content-center align-items-center flex-column">
+    {{!-- sound effect --}}
+    <div class="sound">
+        <div>
+            <button class="btnSound rain">
+                <i class="fa-solid fa-cloud-rain"></i>
+                <audio class="sound" id="sound--rain" src="/audio/rain.mp3"></audio>
+            </button>
+        </div>
+        <div>
+            <button class="btnSound cricket">
+                <i class="fa-solid fa-bug"></i>
+                <audio class="sound" id="sound--cricket" src="/audio/cricket.mp3"></audio>
+            </button>
+        </div>
+        <div>
+            <button class="btnSound city">
+                <i class="fa-solid fa-car-side"></i>
+                <audio class="sound" id="sound--city" src="/audio/rain.mp3"></audio>
+            </button>
+        </div>
+        <div>
+            <button class="btnSound keyboard">
+                <i class="fa-regular fa-keyboard"></i>
+                <audio class="sound" id="sound--keyboard" src="/audio/keyboard.mp3"></audio>
+            </button>
+        </div>
+    </div>
+
     <!-- header -->
     <header class="header">
         <nav class="navbar bg-transparent">
@@ -39,37 +67,37 @@
 
     <!-- content -->
     <div class="theme_picker">
-        <h5 class="text-uppercase text-white">Pick the theme you adore</h5>
-        <ul>
-            <li data-aos="fade-right" data-aos-offset="0" data-aos-delay="300" data-aos-easing="ease-in-sine">
+        <button class="btn btn-theme-toggle">
+            <h5 class="text-uppercase text-white">Your theme</h5>
+        </button>
+        <ul class="theme-picker__list">
+            <li>
                 <button class="btn btn-theme" data-theme="sunset">Sunset</button>
             </li>
-            <li data-aos="fade-right" data-aos-offset="0" data-aos-delay="320" data-aos-easing="ease-in-sine">
+            <li>
                 <button class="btn btn-theme" data-theme="ocean">Ocean</button>
-            </li>
-            <li data-aos="fade-right" data-aos-offset="0" data-aos-delay="340" data-aos-easing="ease-in-sine">
+                </lig=>
+            <li>
                 <button class="btn btn-theme" data-theme="candy">Candy</button>
-            </li>
-            <li data-aos="fade-right" data-aos-offset="0" data-aos-delay="360" data-aos-easing="ease-in-sine">
+                </li320>
+            <li>
                 <button class="btn btn-theme" data-theme="herb">Herb</button>
-            </li>
-            <li data-aos="fade-right" data-aos-offset="0" data-aos-delay="380" data-aos-easing="ease-in-sine">
+                </li340>
+            <li>
                 <button class="btn btn-theme" data-theme="bee">Bee</button>
-            </li>
-            <li data-aos="fade-right" data-aos-offset="0" data-aos-delay="400" data-aos-easing="ease-in-sine">
+                </li360>
+            <li>
                 <button class="btn btn-theme" data-theme="netflix">Netflix</button>
-            </li>
-            <li data-aos="fade-right" data-aos-offset="0" data-aos-delay="420" data-aos-easing="ease-in-sine">
+                </li380>
+            <li>
                 <button class="btn btn-theme" data-theme="vozer">Vozer</button>
-            </li>
+                </li400>
         </ul>
     </div>
 
-
     {{!-- music --}}
     <div class="music_picker">
-        <h5 class="text-uppercase text-white">Break sound</h5>
-        <ul>
+        <ul class="music-picker__list">
             <li>
                 <button class="btn btn-ring" data-ring="bell"><audio src="/audio/bell.mp3"
                         id="musicbell"></audio>Bell</button>
@@ -106,6 +134,10 @@
                         id="musicjojo"></audio>JoJo</button>
             </li>
         </ul>
+
+        <button class="btn btn-music-toggle">
+            <h5 class="text-uppercase text-white">Break sound</h5>
+        </button>
     </div>
 
     {{!-- timer --}}

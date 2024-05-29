@@ -241,3 +241,58 @@ btnTimeAdjust.addEventListener("click", () => {
 
   mainTimer();
 });
+
+//**********************************************
+
+//theme + sound toggle
+const btnThemeToggle = document.querySelector(".btn.btn-theme-toggle");
+const btnMusicToggle = document.querySelector(".btn.btn-music-toggle");
+const themeList = document.querySelector(".theme-picker__list");
+const musicList = document.querySelector(".music-picker__list");
+let isClickTheme = true,
+  isClickMusic = true;
+
+themeList.style.display = "none";
+musicList.style.display = "none";
+
+btnThemeToggle.addEventListener("click", () => {
+  if (isClickTheme) {
+    themeList.style.display = "block";
+    isClickTheme = false;
+  } else {
+    themeList.style.display = "none";
+    isClickTheme = true;
+  }
+});
+
+btnMusicToggle.addEventListener("click", () => {
+  if (isClickMusic) {
+    musicList.style.display = "block";
+    isClickMusic = false;
+  } else {
+    musicList.style.display = "none";
+    isClickMusic = true;
+  }
+});
+
+// *********************************************
+
+//bg sound
+const btnSound = document.querySelectorAll(".btnSound");
+let currentAudio = null;
+btnSound.forEach((btn) => {
+  btn.addEventListener("click", function () {
+    const audio = this.querySelector("audio");
+    console.log(audio);
+
+    if (audio) {
+      if (currentAudio && currentAudio !== audio) {
+        currentAudio.pause();
+        currentAudio.currentTime = 0;
+      }
+    }
+
+    audio.play();
+    currentAudio = audio;
+  });
+});
