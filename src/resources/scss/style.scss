@@ -12,6 +12,7 @@
           color: var(--text);
         }
         .dropdown {
+          position: relative;
           ul {
             background-color: var(--btn);
             li {
@@ -24,6 +25,78 @@
                   cursor: pointer;
                 }
               }
+            }
+          }
+          .time--adjust {
+            display: block;
+            // max-width: 350px;
+            width: 320px;
+            height: 215px;
+            background-color: rgb(246, 246, 246);
+            border-radius: 10px;
+            position: absolute;
+            top: 40px;
+            left: -200px;
+            .time-title {
+              color: #7f7f7f;
+              i {
+                padding: 10px;
+              }
+              h5 {
+                padding: 4px;
+              }
+            }
+            hr {
+              height: 2px;
+              width: 80%;
+              background: #b4aaaa;
+              color: #b4aaaa;
+              position: absolute;
+              left: 50%;
+              top: 30px;
+              transform: translateX(-50%);
+            }
+            h6 {
+              margin-top: 30px;
+              color: rgb(85, 85, 85);
+              font-weight: bold;
+              padding-left: 10px;
+            }
+            .time--adjust-main {
+              padding: 10px;
+              .pomo-min,
+              .break-min {
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                label {
+                  font-size: 14px;
+                  color: rgb(170, 170, 170);
+                  font-weight: bold;
+                  margin-bottom: 4px;
+                  text-align: center;
+                }
+                input {
+                  width: 70%;
+                  text-align: center;
+                  border: none;
+                  border-radius: 8px;
+                  // height: 20px;
+                  background-color: #e2dede;
+                  &:focus {
+                    outline: none;
+                  }
+                }
+              }
+            }
+            .btn-time--adjust {
+              position: absolute;
+              bottom: 8px;
+              left: 50%;
+              transform: translateX(-50%);
+              width: 30%;
+              box-shadow: none;
             }
           }
         }
