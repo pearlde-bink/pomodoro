@@ -292,6 +292,7 @@ btnSound.forEach((btn) => {
       }
     }
 
+    audio.loop = true;
     audio.play();
     currentAudio = audio;
   });

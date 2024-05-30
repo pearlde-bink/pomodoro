@@ -232,6 +232,35 @@
     }
   }
 
+  // author
+  .author {
+    position: absolute;
+    bottom: 5px;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: row;
+    max-width: 550px;
+    justify-content: space-between;
+    align-self: center;
+    color: var(--text);
+    p {
+      text-align: center;
+    }
+    ul {
+      display: flex;
+      flex-direction: row;
+      li {
+        list-style-type: none;
+        margin: 0px 10px;
+        i {
+          font-size: 25px;
+          color: var(--button);
+        }
+      }
+    }
+  }
+
   .btn {
     color: var(--text);
     font-weight: 600;
@@ -254,5 +283,66 @@
     font-family: "Jersey 15", sans-serif;
     font-weight: 400;
     font-style: normal;
+  }
+}
+
+@media only screen and (max-width: 450px) {
+  .app {
+    .sound {
+      top: 20px;
+      button {
+        width: 25px;
+        height: 25px;
+      }
+    }
+
+    /* header */
+    .header {
+      margin-top: -40px;
+    }
+
+    /* content */
+    // theme
+    .theme_picker {
+      left: 20px;
+      top: 25%;
+      flex-direction: column;
+      button {
+        h5 {
+          font-size: 14px;
+        }
+      }
+      ul {
+        padding-left: 0;
+        margin: 0 auto;
+      }
+    }
+
+    // audio
+    .music_picker {
+      right: 20px;
+      top: 25%;
+      flex-direction: column-reverse;
+      button {
+        h5 {
+          font-size: 14px;
+        }
+      }
+      ul {
+        padding-right: 0;
+        margin: 0 auto;
+      }
+    }
+
+    // main content
+    .content {
+      width: 300px;
+      height: 300px;
+    }
+
+    // author
+    .author {
+      width: 85%;
+    }
   }
 }
